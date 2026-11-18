@@ -8,9 +8,9 @@ formLogin.addEventListener("submit", function (event) {
   const mensagemErro = document.getElementById("mensagemErro");
 
   if (usuario === "ademir" && senha === "Ade|mir_D0Xaquinh@2026") {
-    window.location.href = "arquirvos/parabens.html";
+    window.location.replace("arquivos/parabens.html");
   } else {
-    window.location.href = "arquivos/tentenovamente.html";
+    window.location.replace("arquivos/tentenovamente.html");
     mensagemErro.textContent = "Usuário ou senha incorretos. Tente novamente";
   }
 });
